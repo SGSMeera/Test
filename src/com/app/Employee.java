@@ -5,6 +5,7 @@ public class Employee {
 	private int empId;
 	private String empName;
 	private double empSal;
+	private String loc;
 	public Employee() {
 		super();
 	}
@@ -23,13 +24,19 @@ public class Employee {
 	@Override
 	public String toString() {
 		return "Employee [empId=" + empId + ", empName=" + empName
-				+ ", empSal=" + empSal + "]";
+				+ ", empSal=" + empSal + ", loc=" + loc + "]";
 	}
 	public double getEmpSal() {
 		return empSal;
 	}
 	public void setEmpSal(double empSal) {
 		this.empSal = empSal;
+	}
+	public String getLoc() {
+		return loc;
+	}
+	public void setLoc(String loc) {
+		this.loc = loc;
 	}
 	
 	
